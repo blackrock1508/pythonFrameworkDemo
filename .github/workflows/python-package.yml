@@ -25,6 +25,16 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+    - name : setup  Node.js
+      uses: actions/setup-node@v7
+      with:  
+         node-version: "24"   
+         
+    - name : verify  Node.js
+      run:  
+        node --version
+        
+         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
