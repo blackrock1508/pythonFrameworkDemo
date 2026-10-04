@@ -31,10 +31,11 @@ jobs:
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install Playwirght Chromium
-      run:
+      run: |
           playwight install --with-deps chromium
     - name: Run Tests
-      run: pytest
+      run: |
+          pytest
       
       
     - name: Lint with flake8
