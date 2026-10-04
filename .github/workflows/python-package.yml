@@ -69,4 +69,26 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: playwright-logs
-        path: logs/     
+        path: logs/ 
+        
+    - name: Upload Browser Logs
+      if: always() 
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gamil.com
+        server_port: 465
+        secure: true
+        username:
+        passpord:
+        subject: "Playwright Test Results-${{job.status}}"
+        to: mks.nit@gmail.com
+        from:
+        body: |
+          Hi Team,
+           Playwright is complted
+            Status: ${{job.status}}
+          Report:
+            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}
+            Open the workflow and download the pytest-html-report artficts 
+            
+   
