@@ -43,7 +43,10 @@ jobs:
     - name: Install Playwirght Chromium
       run: |
           playwright install --with-deps chromium
-
-    - name: Test with pytest
+    - name: Install chromium browser
       run: |
+         playwright install --with-deps chromium
+      
+    - name: Test with pytest
+      run: |      
         pytest
