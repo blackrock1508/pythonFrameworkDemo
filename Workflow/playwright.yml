@@ -2,11 +2,7 @@ name:Playwright Demo Workflow
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - master  
-
+      - master
 jobs:
   test: 
     runs-on: ubuntu-latest
