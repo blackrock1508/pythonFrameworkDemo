@@ -79,10 +79,10 @@ jobs:
         server_port: 465
         secure: true
         username: ${{secrets.USERNAME}}
-        passpord: ${{secrets.EMAIL_PASSWORD}}
+        password: ${{secrets.EMAIL_PASSWORD}}
         subject: "Playwright Test Results-${{job.status}}"
         to: mks.nit@gmail.com
-        from:
+        from: 
         body: |
           Hi Team,
            Playwright is complted
