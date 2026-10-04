@@ -1,0 +1,6 @@
+2026-10-04 00:20:07,080 - INFO - new_page.url: https://demoqa.com/sample
+2026-10-04 00:20:07,081 - ERROR - page.url: https://demoqa.com/browser-windows
+2026-10-04 00:20:07,081 - INFO - Number of open pages: 2
+2026-10-04 00:20:38,168 - INFO - new_page.url: https://demoqa.com/sample
+2026-10-04 00:20:38,168 - ERROR - page.url: https://demoqa.com/browser-windows
+2026-10-04 00:20:38,169 - INFO - Number of open pages: 2

@@ -1,0 +1,21 @@
+[
+    {
+        "first_name": "Johna",
+        "last_name": "Dev",
+        "email": "john.doe@example.com",
+        "gender": "Male",
+        "hobbies": ["Sports", "Reading"],
+        "state": "NCR",
+        "city": "Delhi"
+    },
+
+    {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "gender": "Female",
+        "hobbies": ["Reading", "Music"],
+        "state": "Uttar Pradesh",
+        "city": "Lucknow"
+    }
+]
