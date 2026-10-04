@@ -52,7 +52,7 @@ jobs:
         pytest tests --html=report.html --self-contained-html
     - name: upload Test Report 
       if: always()
-      uses: actions/upload-artifacts@v4
+      uses: actions/upload-artifact@v4
       with:
        name: pytest-html-report
        path: reprt.html|
