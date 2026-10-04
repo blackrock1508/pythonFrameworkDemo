@@ -78,8 +78,8 @@ jobs:
         server_address: smtp.gamil.com
         server_port: 465
         secure: true
-        username:
-        passpord:
+        username: ${{secrets.USERNAME}}
+        passpord: ${{secrets.EMAIL_PASSWORD}}
         subject: "Playwright Test Results-${{job.status}}"
         to: mks.nit@gmail.com
         from:
