@@ -45,7 +45,7 @@ jobs:
           playwright install --with-deps chromium
     - name: Run Tests
       run: |
-          pytest
+          pytest/tests
       
       
     - name: Lint with flake8
