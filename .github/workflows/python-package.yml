@@ -82,7 +82,7 @@ jobs:
         password: ${{secrets.EMAIL_PASSWORD}}
         subject: "Playwright Test Results-${{job.status}}"
         to: mks.nit@gmail.com
-        from: 
+        from: ${{secrets.USERNAME}}
         body: |
           Hi Team,
            Playwright is complted
