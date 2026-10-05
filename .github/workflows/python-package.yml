@@ -88,7 +88,7 @@ jobs:
            Playwright is complted
             Status: ${{job.status}}
           Report:
-            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}/ ${{secrets.USERNAME}}/${{secrets.EMAIL_PASSWORD}}
+            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}/${{secrets.USERNAME}}/${{secrets.EMAIL_PASSWORD}}
             Open the workflow and download the pytest-html-report artficts 
             
    
