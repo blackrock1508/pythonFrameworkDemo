@@ -82,13 +82,13 @@ jobs:
         password: ${{secrets.EMAIL_PASSWORD}}
         subject: "Playwright Test Results-${{job.status}}"
         to: mks.nit@gmail.com
-        from: ${{secrets.USERNAME}}
+        from: ${{ secrets.USERNAME}}
         body: |
           Hi Team,
            Playwright is complted
             Status: ${{job.status}}
           Report:
-            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}
+            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}/ ${{secrets.USERNAME}}/${{secrets.EMAIL_PASSWORD}}
             Open the workflow and download the pytest-html-report artficts 
             
    
