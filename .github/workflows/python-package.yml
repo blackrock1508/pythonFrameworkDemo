@@ -90,5 +90,5 @@ jobs:
           Report:
             ${{steps.upload-report.output.artifact-url}}
             Open the workflow and download the pytest-html-report artficts 
-          attachments:  report.html 
+        attachments:  report.html 
    
