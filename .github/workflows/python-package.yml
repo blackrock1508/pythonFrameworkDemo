@@ -75,14 +75,14 @@ jobs:
       if: always() 
       uses: dawidd6/action-send-mail@v3
       with:
-        server_address: smtp.gamil.com
+        server_address: smtp.gmail.com
         server_port: 465
         secure: true
         username: ${{secrets.USERNAME}}
         password: ${{secrets.EMAIL_PASSWORD}}
         subject: "Playwright Test Results-${{job.status}}"
         to: mks.nit@gmail.com
-        from: ${{ secrets.USERNAME}}
+        from: ${{secrets.USERNAME}}
         body: |
           Hi Team,
            Playwright is complted
