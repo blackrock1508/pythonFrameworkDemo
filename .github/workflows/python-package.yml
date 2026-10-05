@@ -85,10 +85,10 @@ jobs:
         from: ${{secrets.USERNAME}}
         body: |
           Hi Team,
-           Playwright is complted
+           Playwright is completed
             Status: ${{job.status}}
           Report:
-            https://github.com/${{github.repository}}/actiions/run/${{github.run_id}}/${{secrets.USERNAME}}/${{secrets.EMAIL_PASSWORD}}
+            ${{steps.upload-report.output.artifact-url}}
             Open the workflow and download the pytest-html-report artficts 
             
    
